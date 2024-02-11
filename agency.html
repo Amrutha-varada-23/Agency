@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Page</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .home {
+            background: url("https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/bg.png") top center no-repeat;
+            background-size: cover;
+        }
+
+        .text {
+            text-align: center;
+            position: relative;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 500;
+            color: #000;
+            padding-top: 350px;
+        }
+
+        .greenline {
+            background-color: #5b9a68;
+            width: 60px;
+            height: 5px;
+            margin: 25px 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            font-family: 'open sans', sans-serif;
+            font-weight: normal;
+            color: #696969;
+        }
+
+        .free_quote {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .get_btn a {
+            background: #eee;
+            font-size: 20px;
+            font-weight: bold;
+            color: #4d8c5a;
+            border: 2px solid #5b9a68;
+            padding: 20px 35px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 3px;
+            text-decoration: none;
+            position: relative;
+            margin-bottom: 350px;
+        }
+
+        .get_btn a:hover {
+            background: #5b9a68;
+            color: #fff;
+        }
+
+        .features {
+            background: #f8f8f8;
+            background-size: cover;
+        }
+
+        .top_padding {
+            padding-top: 60px;
+        }
+
+        .part {
+            position: relative;
+            text-align: center;
+        }
+
+        .img {
+            padding: 20px 20px;
+            border: 2px solid #5b9a68;
+            border-radius: 25px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .text_agency {
+            position: relative;
+            padding: 15px 0px;
+        }
+
+        .agency_st {
+            color: #color:#696969;
+            font-weight: 500;
+            font-size: 22px;
+
+        }
+
+        .agency_text {
+            color: rgb(169, 169, 169);
+            font-size: 16px;
+            width: 225px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .horizontal {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .partners {
+            background: #fff;
+            background-size: cover;
+            text-align: center;
+            padding-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .t1_logos {
+            color: #5b9a68;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-weight: bold;
+        }
+
+        .t2_logos {
+            color: #808080;
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .text_logos {
+            color: #808080;
+            padding-top: 30px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .text_logos {
+            color: #808080;
+            padding-top: 30px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .padd_updown {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo_width {
+            max-width: 100%;
+        }
+
+        .clients {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 40px 0px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .L1_style {
+            color: #5b9a68;
+            font-size: 22px;
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+
+        .L2_style {
+            color: #a9a9a9;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .box_style {
+            background: #fff;
+            border-radius: 5px;
+            //border-bottom: 3px solid #ddd;
+            width: 475px;
+            margin-top: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b_style img {
+            background: #eee;
+            float: left;
+            height: auto;
+            width: 14%;
+            height: auto;
+            position: relative;
+            display: inline-block;
+            margin-left: 3%;
+            margin-top: 20px;
+        }
+
+        .logo_style {
+            border-radius: 100%;
+        }
+
+        .pix_testi_bottom {
+            position: relative;
+            top: -8px;
+        }
+
+        .txt_style {
+            background: #fff;
+            float: right;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 80%;
+            color: #808080;
+            padding-left: 1%;
+            text-align: left;
+            font-size: 14px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .inner_txt_style {
+            padding: 10px;
+            padding-top: 20px;
+        }
+
+        .txt {
+            width: 90%;
+        }
+
+        .star_st {
+            width: 100px;
+        }
+
+        .env_st {
+            color: #5b9a68;
+            position: relative;
+            top: -5px;
+        }
+
+        .footer {
+            background: #fff;
+            text-align: center;
+        }
+
+        .f1_style {
+            color: #5b9a68;
+            font-size: 26px;
+            text-align: center;
+            font-weight: 500;
+            padding-top: 60px;
+        }
+
+        .f2_style {
+            color: #a9a9a9;
+            font-size: 16px;
+            text-align: center;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px 0px;
+        }
+
+        .rights_st {
+            color: #a9a9a9;
+            font-size: 14px;
+            text-align: center;
+            //padding-top: 25px;
+        }
+
+        .second_link {
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .get_2_btn a {
+            background: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            color: #4d8c5a;
+            border: 2px solid #5b9a68;
+            padding: 20px 35px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 3px;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .get_2_btn a:hover {
+            background: #5b9a68;
+            color: #fff;
+        }
+
+        .yt_button {
+            display: inline-block;
+
+            height: 32px;
+            width: 32px;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/14_agency/images/social_icons/yt.png");
+            margin-left: 5px;
+        }
+
+         .yt_button:hover {
+            background: url("https://pixfort.website/themeforest/landing/flatpack/14_agency/images/social_icons/youtube-hover.png");
+        }
+
+        .twitter_button {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/14_agency/images/social_icons/twitter.png");
+            margin-left: 5px;
+        }
+
+       .twitter_button:hover {
+            background: url("https://pixfort.website/themeforest/landing/flatpack/14_agency/images/social_icons/twitter-hover.png");
+        }
+
+        .facebook_button {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/14_agency/images/social_icons/facebook.png");
+            margin-left: 5px;
+        }
+
+        .facebook_button:hover {
+            background: url("https://pixfort.website/themeforest/landing/flatpack/14_agency/images/social_icons/facebook-hover.png");
+        }
+
+       .center_btn {
+            text-align: center;
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="home">
+            <div class="text">
+                <div class="heading">FLATPACK NEW AGENCY</div>
+                <div class="greenline"></div>
+                <p class="sub_text">Lorem ipsum dolor amet consectur adipiscing elit sed do eiusmod tempor incididunt
+                </p>
+                <p class="sub_text">just announced three product updates on our new Releases blog channel</p>
+            </div>
+            <div class="free_quote">
+                <span class="get_btn"><a href="#" class="slow_fade">GET A FREE QUOTE</a></span>
+            </div>
+        </div>
+        <div class="features">
+            <div class="top_padding">
+                <div class="horizontal">
+                    <div class="part">
+                        <div class="img"><img
+                                src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/icon-1.png"
+                                alt="High Quality Tutorials"></div>
+                        <div class="text_agency">
+                            <p class="agency_st">High Quality Tutorials</p>
+                            <p class="agency_text">Lorem ipsum dolor amet consectur adipiscing elit sed do eiusmod
+                                tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="img"><img
+                                src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/icon-2.png"
+                                alt="Best Bundle Ever"></div>
+                        <div class="text_agency">
+                            <p class="agency_st">Best Bundle Ever</p>
+                            <p class="agency_text">Lorem ipsum dolor amet consectur adipiscing elit sed do eiusmod
+                                tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="img"><img
+                                src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/icon-3.png"
+                                alt="Latest New Offers"></div>
+                        <div class="text_agency">
+                            <p class="agency_st">Latest New Offers</p>
+                            <p class="agency_text">Lorem ipsum dolor amet consectur adipiscing elit sed do eiusmod
+                                tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="container">
+                <div class="t1_logos">Who Trust Our Awesome Services</div>
+                <div class="t2_logos">great prices for great tutorials</div>
+                <div class="text_logos">SOME OF THE WORLD'S MOST RESPECTED COMPANIES TRUST FLATPACK</div>
+                <div class="padd_updown">
+                    <div class="logo"> <img
+                            src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/logo1.png"
+                            class="logo_width" alt=""> </div>
+                    <div class="logo"> <img
+                            src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/logo2.png"
+                            class="logo_width" alt=""> </div>
+                    <div class="logo"> <img
+                            src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/logo3.png"
+                            class="logo_width" alt=""> </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients">
+            <div class="container">
+                <div class="L1_style">What our awesome clients say</div>
+                <div class="L2_style">great words from great people</div>
+                <div class="boxes">
+                    <div class="box_style">
+                        <div class="b_style">
+                            <img src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/testimonials/envato-logo.png"
+                                class="logo_style" alt="">
+                        </div>
+                        <div class="txt_style">
+                            <div class="inner_txt_style">
+                                <p class="txt">Im a web designer, you guys are very inspiring I wish to see more work
+                                    from
+                                    maybe more freebies.</p>
+                                <span class="pix_testi_bottom"><img
+                                        src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/stars.original.png"
+                                        class="star_st" alt="">
+                                    <span class="env_st">via Envato.com</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_style">
+                        <div class="b_style">
+                            <img src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/testimonials/unboune-logo.png"
+                                class="logo_style" alt="">
+                        </div>
+
+                        <div class="txt_style">
+                            <div class="inner_txt_style">
+                                <p class="txt">Great service with fast and relible support The design work and detail
+                                    put
+                                    into themes are great.</p>
+                                <span class="pix_testi_bottom"><img
+                                        src="https://pixfort.website/themeforest/landing/flatpack/14_agency/images/14_agency/stars.original.png"
+                                        class="star_st" alt="">
+                                    <span class="env_st">via Unbounce.com</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container ">
+                <div class="f1_style">What Are You Waiting</div>
+                <div class="f2_style">we are the leading company in web tutorials with over 500 handpicked videos your
+                    dreams real with awseome projects.</div>
+                <div class="second_link">
+                    <span class="get_2_btn"><a class="slow_fade" href="#">GET A FREE QUOTE</a></span>
+                </div>
+                <div class="rights_st">All rights reserved Copyright 2015</div>
+                <span class="rights_st">FLATPACK by&nbsp;</span> <span class="pixfort_st">PixFort</span>
+                <div class="center_btn">
+                    <a href="#" class="facebook_button slow_fade"></a>
+                    <a href="#" class="twitter_button slow_fade"></a>
+                    <a href="#" class="yt_button slow_fade"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
